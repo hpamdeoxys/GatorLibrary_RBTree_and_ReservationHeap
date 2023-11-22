@@ -1,0 +1,37 @@
+#TEST CASE 3
+
+
+# Inserting books
+rbt.InsertBook(1, "Book1", "Author1", "Yes")
+rbt.InsertBook(2, "Book2", "Author2", "Yes")
+rbt.InsertBook(3, "Book3", "Author3", "Yes")
+rbt.InsertBook(4, "Book4", "Author4", "Yes")
+rbt.InsertBook(5, "Book5", "Author5", "Yes")
+
+# Borrowing books
+rbt.BorrowBook(102, 2, 2)
+rbt.BorrowBook(103, 3, 3)
+
+# Inserting more books
+rbt.InsertBook(6, "Book6", "Author6", "Yes")
+rbt.InsertBook(7, "Book7", "Author7", "Yes")
+rbt.InsertBook(8, "Book8", "Author8", "Yes")
+
+# Borrowing more books
+rbt.BorrowBook(104, 4, 4)
+rbt.BorrowBook(105, 5, 5)
+
+# Returning books
+rbt.ReturnBook(102, 2)
+rbt.ReturnBook(103, 3)
+rbt.ReturnBook(104, 4)
+rbt.ReturnBook(105, 5)
+
+# Borrowing even more books
+rbt.BorrowBook(101, 6, 1)
+rbt.BorrowBook(102, 7, 2)
+rbt.BorrowBook(103, 8, 3)
+
+# Inserting the last set of books
+rbt.InsertBook(9, "Book9", "Author9", "Yes")
+rbt.InsertBook(10, "Book10", "Author10", "Yes")
